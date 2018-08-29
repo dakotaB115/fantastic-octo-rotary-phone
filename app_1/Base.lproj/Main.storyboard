@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,53 +15,59 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s54-vP-eNm">
-                                <rect key="frame" x="16" y="124" width="343" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.36212625402269749" blue="0.33509692965452742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="🐻"/>
-                                <connections>
-                                    <action selector="🐻WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kTH-w9-Cog"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llH-UV-L3T">
-                                <rect key="frame" x="16" y="228" width="343" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99903871021911095" blue="0.38741349059630237" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="tintColor" red="1" green="0.99064353084879697" blue="0.39370106357601353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="😺"/>
-                                <connections>
-                                    <action selector="😺WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kxe-Ah-pBL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBd-vs-mBT">
-                                <rect key="frame" x="16" y="346" width="343" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.37608421277256099" green="0.52501855208080173" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="tintColor" red="1" green="0.99064353080000001" blue="0.39370106360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="🦊"/>
-                                <connections>
-                                    <action selector="🦊WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxr-LY-Dw0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yb-Tw-Qhx">
-                                <rect key="frame" x="17" y="20" width="343" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41563629099579502" green="1" blue="0.33771898848683668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="🦁"/>
-                                <connections>
-                                    <action selector="🦁WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKH-bO-ANn"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nTp-7H-TIM">
+                                <rect key="frame" x="16" y="53" width="288" height="384"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yb-Tw-Qhx">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="96"/>
+                                        <color key="backgroundColor" red="0.41563629099579502" green="1" blue="0.33771898848683668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <state key="normal" title="🦁"/>
+                                        <connections>
+                                            <action selector="🦁WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W54-f1-U9Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s54-vP-eNm">
+                                        <rect key="frame" x="0.0" y="96" width="288" height="96"/>
+                                        <color key="backgroundColor" red="1" green="0.36212625402269749" blue="0.33509692965452742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <state key="normal" title="🐻"/>
+                                        <connections>
+                                            <action selector="🐻WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xpf-xx-eE9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llH-UV-L3T">
+                                        <rect key="frame" x="0.0" y="192" width="288" height="96"/>
+                                        <color key="backgroundColor" red="1" green="0.99903871021911095" blue="0.38741349059630237" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <color key="tintColor" red="1" green="0.99064353084879697" blue="0.39370106357601353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="🐱"/>
+                                        <connections>
+                                            <action selector="🐱WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P0M-Ve-EOu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBd-vs-mBT">
+                                        <rect key="frame" x="0.0" y="288" width="288" height="96"/>
+                                        <color key="backgroundColor" red="0.37608421277256099" green="0.52501855208080173" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <color key="tintColor" red="1" green="0.99064353080000001" blue="0.39370106360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="🦊"/>
+                                        <connections>
+                                            <action selector="🦊WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOz-8e-e9Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nTp-7H-TIM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="BWd-Vl-ELv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nTp-7H-TIM" secondAttribute="trailing" constant="16" id="a1S-8G-pac"/>
+                            <constraint firstItem="nTp-7H-TIM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cZw-Uc-3sD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
