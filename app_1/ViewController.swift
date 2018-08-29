@@ -8,7 +8,7 @@
 
 import UIKit
 
-let this = "This is a "
+let this = "This is a"
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
